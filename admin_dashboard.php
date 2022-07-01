@@ -47,8 +47,7 @@
 	<?php
 		session_start();
 		$name = "";
-		$connection = mysqli_connect("localhost","root","");
-		$db = mysqli_select_db($connection,"sms");
+		include('config/db_connect.php');
 	?>
 </head>
 <body style="background-color:teal">

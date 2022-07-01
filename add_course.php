@@ -1,6 +1,6 @@
 <?php
-	$connection = mysqli_connect("localhost","root","");
-	$db = mysqli_select_db($connection,"sms");
+
+include('config/db_connect.php');
 	$query = "insert into students values('$_POST[course]')";
 	$query_run = mysqli_query($connection,$query);
 ?>
